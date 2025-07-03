@@ -1,0 +1,29 @@
+.flashcards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #666;
+}
+
+.empty-state h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.empty-state p {
+  margin: 0 0 2rem 0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .flashcards-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
